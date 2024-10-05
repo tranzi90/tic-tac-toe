@@ -2,6 +2,7 @@ import java.lang.Exception
 import kotlin.random.Random
 
 var board = arrayListOf<ArrayList<String>>()
+
 fun main(args: Array<String>) {
     for (i in 0..2) {
         val row = arrayListOf<String>()
@@ -17,7 +18,7 @@ fun main(args: Array<String>) {
     do {
         println("Please enter a position (e.g. 1, 1)")
         val input = readLine()?:""
-        var x = 0
+        var x: Int
         var y = 0
         try{
             val positions = input.split(",")
